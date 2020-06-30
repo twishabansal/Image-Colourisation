@@ -7,8 +7,4 @@ Replicating and improving upon the Colorful Image Colorization paper by Richard 
 - Sejal
 
 ## Workflow
-| Date       | Discussion Topics                             | Topics to be completed after discussion                                                    |
-|------------|-----------------------------------------------|--------------------------------------------------------------------------------------------|
-| 22-06-2020 | Workflow and resources                        | Basics of PyTorch tensors, linear regression, reading torch.tensor docs and experimenting. |
-| 23-06-2020 | Doubts regarding grad  and backward functions | Working with images and logistic regression. Train a model on a standard PyTorch dataset.  |
-| 25-06-2020 |   
+Learning and exploring the basics of pytorch and deep learning. Reading the paper. Plan to start working on the project in a few days.
