@@ -1,0 +1,68 @@
+\documentclass[16pt, subsection=false]{beamer}
+
+\title{Colorful Image Colorization}
+\subtitle{Jun-Jul 2020 WTEF Project using Deep Learning}
+\author[Team 9]{Priyansi, Sejal, Twisha}
+\date{24 June 2020}
+
+\usetheme{Berlin}
+\usecolortheme{seahorse}
+\usefonttheme{structurebold}
+
+\begin{document}
+
+\section{Introduction}
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\section{Overview}
+\begin{frame}
+	\frametitle{Overview}
+	The objective of our project is to replicate the paper on Colorful Image Colorization, by Richard Zhang, Phillip Isola, Alexei A. Efros (5 October, 2016).
+\end{frame}
+
+\section{Technology Stack}
+\begin{frame}
+	\frametitle{Technology Stack}
+	\begin{enumerate}
+		\item Deep Learning with PyTorch \\
+		\item Flask
+	\end{enumerate}
+\end{frame}
+
+\section{Description}
+\begin{frame}
+	\frametitle{Description}
+	\begin{itemize}
+		\item\textbf{The Objective}:``Given a grayscale photograph as input, the paper attacks the problem
+			of hallucinating a \emph{plausible} color version of the photograph." - explains the Abstract.
+			The project aims to achieve a``fully automatic approach that produces vibrant and realistic 
+			colorizations."
+		\item\textbf{How to Accomplish it}: The problem is dealt with as a classification task and uses class
+			rebalancing at training time to increase the diversity of colors. The system is implemented as
+			a feed-forward pass in a CNN at test time and is trained on over a million images.
+	\end{itemize}
+\end{frame}
+\begin{frame}
+	\frametitle{Description}
+	\begin{itemize}
+		\item\textbf{Why This Project}: Common approaches and solutions to tackle this problem either rely on
+			significant user interaction or result in desaturated colorizations, in an effort to restore
+			the ground image. Hence, this project, instead of making futile efforts to restore the
+			original colorization, aims to produce the most plausible color version.
+		\item\textbf{Evaluation and Success}: The algorithm used in the model is evaluated using the 
+			\emph{``color Turing test"}, where human participants are asked to differentiate between the 
+			ground image and the colorized image. The algorithm successfully fools humans in 32\% of the
+			trials.
+	\end{itemize}                                                                                                   \end{frame}
+
+\section{Status}
+\begin{frame}
+	\frametitle{Status}
+	The work on the project itself has not been started yet.
+	All three of us are still in the learning phase.
+	We plan to start working on it within the next two days.
+\end{frame}
+
+\end{document}
