@@ -1,0 +1,83 @@
+\documentclass[12pt]{beamer}
+
+\title[Image-Colourization]{Image Colourization Project}
+\subtitle{Jun-Aug 2020 {\textbar} WTEF Project {\textbar} Deep Learning}
+\author[Team-9]{Priyansi Singh {\textbar} Sejal Gupta {\textbar} Twisha Bansal}
+\date{28 August 2020}
+
+\usetheme{metropolis}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\graphicspath{ {/mnt/c/Users/Sejal/Desktop/project/} }
+
+\begin{document}
+
+\begin{frame}
+        \titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+	\center{\large{\textbf{\textcolor{black}{Black} \textcolor{darkgray}{and} \colorbox{gray}{\textcolor{white}{White}}}
+	${\Longrightarrow}$ \textbf{\alert{Coloured Version}}}}\\~
+\end{frame}
+
+\begin{frame}{Technology Stack and Frameworks}
+	\begin{itemize}
+		\item Area of Project: \textbf{Deep Learning}
+			\pause
+		\item Deep Learning Framework: \textbf{PyTorch}
+			\pause
+		\item Framework used for Deployment: \textbf{Flask}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[standout]
+	\center{Broad idea of the method used for Colourization}
+		\pause
+	\center{\alert{AutoEncoders}}
+\end{frame}
+
+\begin{frame}{ColorModels and ColorSpaces}
+	\center{\huge{\textbf{RGB and CIELAB}}}
+\end{frame}
+
+\begin{frame}{CIELAB}
+	\includegraphics[width=10cm]{lab}
+\end{frame}
+
+\begin{frame}{The AutoEncoder Model}
+\end{frame}
+
+\begin{frame}{Results}
+\end{frame}
+
+\begin{frame}{Limitations of the Model}
+	\begin{itemize}
+		\item Trained on a very small dataset
+			\pause
+		\item Desaturated colourization
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Obstacles}
+	\begin{itemize}
+		\item Exploring other Research Papers on the topic
+			\pause
+		\item HUGE Dataset
+			\pause
+		\item Limited Resources
+			\pause
+		\item Colour Conversions
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[standout]
+	\center{What if we don't use \alert{CIELAB} colorspace?}
+\end{frame}
+
+\begin{frame}[standout]
+	\center{Questions and Suggestions?}
+\end{frame}
+
+\end{document}
