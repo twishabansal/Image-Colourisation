@@ -13,7 +13,7 @@ Using AutoEncoders to build an Image Colourization model, using various datasets
 - Deployment
 - Web Development
 
-##Technology Stack
+## Technology Stack
 - PyTorch
 - Python
 - Flask
@@ -23,10 +23,10 @@ Using AutoEncoders to build an Image Colourization model, using various datasets
 - JavaScript
 - Kaggle
 
-#Code for the Deep Learning model
+## Code for the Deep Learning model
 Documented Code for the Deep Learning Image Colourization model is available in the repository as **image-colourization-documented.ipynb** as a Python notebook, to refer to the code written to process the data, define the model and train the model.
 
-#Datasets 
+## Datasets 
 The following datasets were used to train the model.
-1. [](https://www.kaggle.com/lijiyu/imagenet)
-2. [](https://www.kaggle.com/moltean/fruits)
+1. [https://www.kaggle.com/lijiyu/imagenet](https://www.kaggle.com/lijiyu/imagenet)
+2. [https://www.kaggle.com/moltean/fruits](https://www.kaggle.com/moltean/fruits)
