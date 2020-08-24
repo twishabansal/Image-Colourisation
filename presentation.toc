@@ -1,6 +1,0 @@
-\beamer@sectionintoc {1}{Introduction}{1}{0}{1}
-\beamer@sectionintoc {2}{Overview}{2}{0}{2}
-\beamer@sectionintoc {3}{Technology Stack}{3}{0}{3}
-\beamer@sectionintoc {4}{Description}{4}{0}{4}
-\beamer@sectionintoc {5}{Workflow}{6}{0}{5}
-\beamer@sectionintoc {6}{Status}{7}{0}{6}
