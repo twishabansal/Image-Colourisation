@@ -1,6 +1,6 @@
 \documentclass[12pt]{beamer}
 
-\title[Image-Colourization]{Image Colourization Project}
+\title[Image-Colourization]{Image Colourisation Project}
 \subtitle{Jun-Aug 2020 {\textbar} WTEF Project {\textbar} Deep Learning}
 \author[Team-9]{Priyansi Singh {\textbar} Sejal Gupta {\textbar} Twisha Bansal}
 \date{28 August 2020}
@@ -8,6 +8,7 @@
 \usetheme{metropolis}
 \usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{hyperref}
 
 \graphicspath{ {/mnt/c/Users/Sejal/Desktop/project/} }
 
@@ -17,63 +18,167 @@
         \titlepage
 \end{frame}
 
-\begin{frame}{Overview}
-	\center{\large{\textbf{\textcolor{black}{Black} \textcolor{darkgray}{and} \colorbox{gray}{\textcolor{white}{White}}}
-	${\Longrightarrow}$ \textbf{\alert{Coloured Version}}}}\\~
+\begin{frame}{Objective}
+	\begin{center}
+		\includegraphics[width=11cm]{Objective}
+	\end{center}
 \end{frame}
 
-\begin{frame}{Technology Stack and Frameworks}
+\begin{frame}{Motivation}
+	\begin{center}
+		\includegraphics[width=10cm]{slide_fascination}
+	\end{center}
+\end{frame}
+
+\begin{frame}[standout]
+	\center{Our journey from being entirely clueless to completing an\\ Image Colourisation project\\ in Deep Learning}
+\end{frame}
+
+\begin{frame}{Colorful Image Colorization paper by Richard Zhang, Phillip Isola, Alexei A. Efros}
+	\textbf{To hallucinate the most plausible colour version rather than the ground truth}\\
+	\vspace{10 mm}
+	\pause
+	\textbf{Train a CNN to map from a grayscale input to a distribution over quantized
+	colour value outputs}
+\end{frame}
+
+\begin{frame}{Colorful Image Colorization paper by Richard Zhang, Phillip Isola, Alexei A. Efros}
+	\textbf{Challenges}\\
 	\begin{itemize}
-		\item Area of Project: \textbf{Deep Learning}
-			\pause
-		\item Deep Learning Framework: \textbf{PyTorch}
-			\pause
-		\item Framework used for Deployment: \textbf{Flask}
+		\item Advanced Mathematics
+		\item Obtaining the ImageNet Dataset
+		\item Availability of a GPU
+		\item Uploading a 150 GB dataset online
 	\end{itemize}
 \end{frame}
 
 \begin{frame}[standout]
-	\center{Broad idea of the method used for Colourization}
-		\pause
-	\center{\alert{AutoEncoders}}
+	\center{\alert{AutoEncoders}}\\
+	A type of Neural Network used to learn representation for a set of data in an unsupervised manner
 \end{frame}
 
-\begin{frame}{ColorModels and ColorSpaces}
-	\center{\huge{\textbf{RGB and CIELAB}}}
+\begin{frame}{CIELAB Colour Space}
+	\begin{itemize}
+		\item Why RGB will not work\\~
+	\end{itemize}
 \end{frame}
 
-\begin{frame}{CIELAB}
-	\includegraphics[width=10cm]{lab}
+\begin{frame}[standout]
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\center{\alert{\textbf{Grayscale}}}\\
+			\center{Only 1 channel}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\center{\alert{\textbf{RGB}}}\\
+			\center{3 channels}
+		\end{column}
+	\end{columns}
+	\pause
+	\vspace{5 mm}
+	\center{\alert{\textbf{Grayscale $\Rightarrow$ RGB}}}
+	\center{3 channels, but R==G==B}
 \end{frame}
 
-\begin{frame}{The AutoEncoder Model}
+{\setbeamercolor{background canvas}{bg=gray}
+	\begin{frame}
+	\end{frame}
+}
+
+\begin{frame}{CIELAB Colour Space}
+	\begin{itemize}
+		\item L channel: Lightness
+		\item A channel: green to red
+		\item B channel: blue to yellow
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Technology Stack}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item \textbf{Building the Model}\\
+					- PyTorch\\
+				\item \textbf{Datasets and Version Control}\\
+					- Kaggle\\
+				\item \textbf{Deployment}\\
+					- Heroku\\
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item \textbf{Backend Development}\\
+					- Flask\\
+				\item \textbf{Frontend Development}\\
+					- HTML\\
+					- CSS\\
+					- JavaScript\\
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Model}
+	\begin{center}
+		\includegraphics[width=11cm]{Model}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Model}
+	\begin{itemize}
+		\item Loss Function: \textbf{MSE Loss}
+		\item Optimiser: \textbf{Adam}
+		\item Range of Learning Rates used for training: \textbf{1e-3 - 1e-6}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Challenges}
+	\begin{itemize}
+		\item Tensor and Numpy Array interconvertability
+		\item Interoperatability between CPU and CUDA
+		\item Runtime disconnects
+		\item Signal being killed due to memory usage
+			\pause
+		\item No Mathematical Parameters like Accuracy to check results
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Datasets}
+	\begin{itemize}
+		\item \href{https://www.kaggle.com/lijiyu/imagenet}{ImageNet}\\
+			Trained on 49000 images, Validated on 1000 images
+		\item \href{https://www.kaggle.com/moltean/fruits}{Fruits 360}\\
+			Trained on 66692 images, Validated on 1000 images
+		\item \href{https://www.kaggle.com/hsankesara/flickr-image-dataset}{Flickr}\\
+			Trained on 30783 images, Validated on 1000 images
+		\item \href{https://www.kaggle.com/nitishabharathi/scene-classification}{Scene Classification}\\
+			Trained on 23335 images, Validated on 1000 images
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Results}
 \end{frame}
 
-\begin{frame}{Limitations of the Model}
+\begin{frame}{Further Improvements}
 	\begin{itemize}
-		\item Trained on a very small dataset
-			\pause
-		\item Desaturated colourization
+		\item Images following only some certain themes are coloured well
+		\item Incorporating Data augmentation
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Obstacles}
-	\begin{itemize}
-		\item Exploring other Research Papers on the topic
-			\pause
-		\item HUGE Dataset
-			\pause
-		\item Limited Resources
-			\pause
-		\item Colour Conversions
-	\end{itemize}
+\begin{frame}{References}
+	\begin{enumerate}
+		\item Colorful Image Colorization paper by Richard Zhang, Phillip Isola, Alexei A. Efros: \textcolor{cyan}{\href{https://arxiv.org/pdf/1603.08511.pdf}{https://arxiv.org/pdf/1603.08511.pdf}}
+		\item Applications of AutoEncoders - Image Colourisation: \textcolor{cyan}{\href{https://github.com/bnsreenu/python\_for\_microscopists}{https://github.com/bnsreenu/python\_for\_microscopists}}
+	\end{enumerate}
 \end{frame}
 
-\begin{frame}[standout]
-	\center{What if we don't use \alert{CIELAB} colorspace?}
+\begin{frame}{Our Project}
+	\begin{itemize}
+		\item Web Application: \textcolor{cyan}{\href{https://image-colouriser.herokuapp.com/}{https://image-colouriser.herokuapp.com/}}
+		\item Gitlab: \textcolor{cyan}{\href{https://gitlab.com/twishabansal/image-colourisation}{https://gitlab.com/twishabansal/image-colourisation}}
+		\item Kaggle Notebook: \textcolor{cyan}{\href{https://www.kaggle.com/sejalgupta01/image-colorization-starter}{https://www.kaggle.com/sejalgupta01/image-colorization-starter}}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[standout]
