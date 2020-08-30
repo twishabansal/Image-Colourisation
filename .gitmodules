@@ -1,0 +1,3 @@
+[submodule "image-colouriser-streamlit"]
+	path = image-colouriser-streamlit
+	url = https://github.com/Priyansi/image-colouriser-streamlit.git
