@@ -9,7 +9,7 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://image-colouriser-streamlit.herokuapp.com/)
 
-![Working Demo of Web App](https://gitlab.com/twishabansal/image-colourisation/-/blob/master/demo.gif)
+![Working Demo of Web App](demo.gif)
 
 ## Technology Stack
 - [Pytorch](https://pytorch.org/) for building the model
