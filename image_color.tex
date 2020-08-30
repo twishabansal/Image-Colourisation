@@ -2,8 +2,8 @@
 
 \title[Image-Colourization]{Image Colourisation Project}
 \subtitle{Jun-Aug 2020 {\textbar} WTEF Project {\textbar} Deep Learning}
-\author[Team-9]{Priyansi Singh {\textbar} Sejal Gupta {\textbar} Twisha Bansal}
-\date{28 August 2020}
+\author[Team-9]{Priyansi {\textbar} Sejal Gupta {\textbar} Twisha Bansal}
+\date{31 August 2020}
 
 \usetheme{metropolis}
 \usepackage{xcolor}
@@ -101,18 +101,14 @@
 					- PyTorch\\
 				\item \textbf{Datasets and Version Control}\\
 					- Kaggle\\
-				\item \textbf{Deployment}\\
-					- Heroku\\
 			\end{itemize}
 		\end{column}
 		\begin{column}{0.5\textwidth}
 			\begin{itemize}
-				\item \textbf{Backend Development}\\
-					- Flask\\
-				\item \textbf{Frontend Development}\\
-					- HTML\\
-					- CSS\\
-					- JavaScript\\
+				\item \textbf{Web App}\\
+					- Streamlit\\
+				\item \textbf{Cloud Platform}\\
+					- Heroku
 			\end{itemize}
 		\end{column}
 	\end{columns}
@@ -144,25 +140,56 @@
 \end{frame}
 
 \begin{frame}{Datasets}
+	Trained on approximately 313K images
 	\begin{itemize}
-		\item \href{https://www.kaggle.com/lijiyu/imagenet}{ImageNet}\\
-			Trained on 49000 images, Validated on 1000 images
-		\item \href{https://www.kaggle.com/moltean/fruits}{Fruits 360}\\
-			Trained on 66692 images, Validated on 1000 images
+		\item \href{https://www.kaggle.com/lijiyu/imagenet}{ImageNet(50K Images)}\\
 		\item \href{https://www.kaggle.com/hsankesara/flickr-image-dataset}{Flickr}\\
-			Trained on 30783 images, Validated on 1000 images
+		\item \href{https://www.kaggle.com/huseynguliyev/landscape-classification}{Landscape Classification}\\
 		\item \href{https://www.kaggle.com/nitishabharathi/scene-classification}{Scene Classification}\\
-			Trained on 23335 images, Validated on 1000 images
+		\item \href{https://www.kaggle.com/moltean/fruits}{Fruits 360}\\
+		\item \href{https://www.kaggle.com/chrisfilo/fruit-recognition}{Fruits Recognition}\\
+		\item \href{https://www.kaggle.com/salil007/caavo}{Clothes Classification}\\
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Results}
+\begin{frame}{Results: Pass}
+	\includegraphics[width=11cm]{pass}
+\end{frame}
+
+\begin{frame}{Results: Fail}
+	\includegraphics[width=11cm]{fail}
+\end{frame}
+
+\begin{frame}{Web Application and Deployment}
+	\textbf{Web App:}\\
+	\begin{itemize}
+		\item Made with Streamlit\\
+		\item Why Streamlit:\\
+			\begin{enumerate}
+				\item Reducing app code to Python scripts
+				\item Treating widgets like variables
+				\item Reusing data with memoization
+			\end{enumerate}
+	\end{itemize}
+	\textbf{Deployment:}
+	\begin{itemize}
+		\item Heroku as the cloud platform
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Further Improvements}
 	\begin{itemize}
-		\item Images following only some certain themes are coloured well
-		\item Incorporating Data augmentation
+		\item \textbf{Model}
+			\begin{enumerate}
+				\item Generalising on more themes
+				\item Automating the classification of themes
+				\item Incorporating Data augmentation
+				\item Compatibility with all image sizes
+			\end{enumerate}
+		\item \textbf{Web App}
+			\begin{enumerate}
+				\item Using Flask along with HTML/CSS/JS to customize better
+			\end{enumerate}
 	\end{itemize}
 \end{frame}
 
@@ -175,7 +202,7 @@
 
 \begin{frame}{Our Project}
 	\begin{itemize}
-		\item Web Application: \textcolor{cyan}{\href{https://image-colouriser.herokuapp.com/}{https://image-colouriser.herokuapp.com/}}
+		\item Web Application: \textcolor{cyan}{\href{https://image-colouriser-streamlit.herokuapp.com/}{https://image-colouriser-streamlit.herokuapp.com/}}
 		\item Gitlab: \textcolor{cyan}{\href{https://gitlab.com/twishabansal/image-colourisation}{https://gitlab.com/twishabansal/image-colourisation}}
 		\item Kaggle Notebook: \textcolor{cyan}{\href{https://www.kaggle.com/sejalgupta01/image-colorization-starter}{https://www.kaggle.com/sejalgupta01/image-colorization-starter}}
 	\end{itemize}
