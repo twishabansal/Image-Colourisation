@@ -1,17 +1,19 @@
-# Image Colourization :rainbow: 
+\# Image Colourization :rainbow: 
 [<img src="https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?&style=for-the-badge&logo=PyTorch&logoColor=white" />](https://pytorch.org/)
 [<img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>](https://heroku.com/)
 
 [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
-[![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://gitlab.com/twishabansal/image-colourisation/-/graphs/master)
+<img src="https://img.shields.io/github/contributors/priyansi/colourful-image-colourisation">
 
-An image colourisation model trained on 300k images using autoencoders to colourise grayscale images live [here](https://image-colouriser-streamlit.herokuapp.com/).
+#### An image colourisation model trained on 313k images using autoencoders to colourise grayscale images.
+
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://image-colouriser-streamlit.herokuapp.com/)
+
 
 ## Technology Stack
-- PyTorch
-- Streamlit
-- Heroku
-- Kaggle
+- [Pytorch](https://pytorch.org/) for building the model
+- [Streamlit](https://www.streamlit.io/) for building the web application
+- [Heroku](https://heroku.com/) for deploying the web application
 
 ## To Run the Notebook using Pretrained Weights
 
@@ -34,9 +36,9 @@ model = load_checkpoint(filepath)
 
 ## Train the Model from Scratch
 
-Clone the repository with `git clone https://gitlab.com/twishabansal/image-colourisation.git`<br>
-Documented Code for the model is available in the repository as `image-colourization-starter.ipynb` as an IPython notebook.<br>
-Refer to the code written to process the data, define the model, train it, and finally get a prediction.
+1. Clone the repository with `git clone https://gitlab.com/twishabansal/image-colourisation.git`<br>
+2. Documented Code for the model is available in the repository as `image-colourization-starter.ipynb` as an IPython notebook.<br>
+3. Refer to the code written to process the data, define the model, train it, and finally get a prediction.
 
 ### Datasets 
 The following datasets were used to train the model-
@@ -50,8 +52,8 @@ The following datasets were used to train the model-
 
 ## How To Run The Web App
 1. Clone the repository with `https://github.com/Priyansi/image-colouriser-streamlit.git`
-2. `pip install streamlit`
-3. `streamlit run app/app.py` will run the app on `http://localhost:8501`
+2. To install Streamlit - `pip install streamlit`
+3. To run the app on `http://localhost:8501` run `streamlit run app/app.py`
 
 ## References
 1. [Colorful Image Colorization](https://arxiv.org/pdf/1603.08511.pdf)
