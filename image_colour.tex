@@ -1,0 +1,215 @@
+\documentclass[12pt]{beamer}
+
+\title[Image-Colourization]{Image Colourisation Project}
+\subtitle{Jun-Aug 2020 {\textbar} WTEF Project {\textbar} Deep Learning}
+\author[Team-9]{Priyansi {\textbar} Sejal Gupta {\textbar} Twisha Bansal}
+\date{31 August 2020}
+
+\usetheme{metropolis}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\graphicspath{ {/mnt/c/Users/Sejal/Desktop/project/} }
+
+\begin{document}
+
+\begin{frame}
+        \titlepage
+\end{frame}
+
+\begin{frame}{Objective}
+	\begin{center}
+		\includegraphics[width=11cm]{Objective}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Motivation}
+	\begin{center}
+		\includegraphics[width=10cm]{slide_fascination}
+	\end{center}
+\end{frame}
+
+\begin{frame}[standout]
+	\center{Our journey from being entirely clueless to completing an\\ Image Colourisation project\\ in Deep Learning}
+\end{frame}
+
+\begin{frame}{Colorful Image Colorization paper by Richard Zhang, Phillip Isola, Alexei A. Efros}
+	\textbf{To hallucinate the most plausible colour version rather than the ground truth}\\
+	\vspace{10 mm}
+	\pause
+	\textbf{Train a CNN to map from a grayscale input to a distribution over quantized
+	colour value outputs}
+\end{frame}
+
+\begin{frame}{Colorful Image Colorization paper by Richard Zhang, Phillip Isola, Alexei A. Efros}
+	\textbf{Challenges}\\
+	\begin{itemize}
+		\item Advanced Mathematics
+		\item Obtaining the ImageNet Dataset
+		\item Availability of a GPU
+		\item Uploading a 150 GB dataset online
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[standout]
+	\center{\alert{AutoEncoders}}\\
+	A type of Neural Network used to learn representation for a set of data in an unsupervised manner
+\end{frame}
+
+\begin{frame}{CIELAB Colour Space}
+	\begin{itemize}
+		\item Why RGB will not work\\~
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[standout]
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\center{\alert{\textbf{Grayscale}}}\\
+			\center{Only 1 channel}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\center{\alert{\textbf{RGB}}}\\
+			\center{3 channels}
+		\end{column}
+	\end{columns}
+	\pause
+	\vspace{5 mm}
+	\center{\alert{\textbf{Grayscale $\Rightarrow$ RGB}}}
+	\center{3 channels, but R==G==B}
+\end{frame}
+
+{\setbeamercolor{background canvas}{bg=gray}
+	\begin{frame}
+	\end{frame}
+}
+
+\begin{frame}{CIELAB Colour Space}
+	\begin{itemize}
+		\item L channel: Lightness
+		\item A channel: green to red
+		\item B channel: blue to yellow
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Technology Stack}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item \textbf{Building the Model}\\
+					- PyTorch\\
+				\item \textbf{Datasets and Version Control}\\
+					- Kaggle\\
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item \textbf{Web App}\\
+					- Streamlit\\
+				\item \textbf{Cloud Platform}\\
+					- Heroku
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Model}
+	\begin{center}
+		\includegraphics[width=11cm]{Model}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Model}
+	\begin{itemize}
+		\item Loss Function: \textbf{MSE Loss}
+		\item Optimiser: \textbf{Adam}
+		\item Range of Learning Rates used for training: \textbf{1e-3 - 1e-6}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Challenges}
+	\begin{itemize}
+		\item Tensor and Numpy Array interconvertability
+		\item Interoperatability between CPU and CUDA
+		\item Runtime disconnects
+		\item Signal being killed due to memory usage
+			\pause
+		\item No Mathematical Parameters like Accuracy to check results
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Datasets}
+	Trained on approximately 313K images
+	\begin{itemize}
+		\item \href{https://www.kaggle.com/lijiyu/imagenet}{ImageNet(50K Images)}\\
+		\item \href{https://www.kaggle.com/hsankesara/flickr-image-dataset}{Flickr}\\
+		\item \href{https://www.kaggle.com/huseynguliyev/landscape-classification}{Landscape Classification}\\
+		\item \href{https://www.kaggle.com/nitishabharathi/scene-classification}{Scene Classification}\\
+		\item \href{https://www.kaggle.com/moltean/fruits}{Fruits 360}\\
+		\item \href{https://www.kaggle.com/chrisfilo/fruit-recognition}{Fruits Recognition}\\
+		\item \href{https://www.kaggle.com/salil007/caavo}{Clothes Classification}\\
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Results: Pass}
+	\includegraphics[width=11cm]{pass}
+\end{frame}
+
+\begin{frame}{Results: Fail}
+	\includegraphics[width=11cm]{fail}
+\end{frame}
+
+\begin{frame}{Web Application and Deployment}
+	\textbf{Web App:}\\
+	\begin{itemize}
+		\item Made with Streamlit\\
+		\item Why Streamlit:\\
+			\begin{enumerate}
+				\item Reducing app code to Python scripts
+				\item Treating widgets like variables
+				\item Reusing data with memoization
+			\end{enumerate}
+	\end{itemize}
+	\textbf{Deployment:}
+	\begin{itemize}
+		\item Heroku as the cloud platform
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Further Improvements}
+	\begin{itemize}
+		\item \textbf{Model}
+			\begin{enumerate}
+				\item Generalising on more themes
+				\item Automating the classification of themes
+				\item Incorporating Data augmentation
+				\item Compatibility with all image sizes
+			\end{enumerate}
+		\item \textbf{Web App}
+			\begin{enumerate}
+				\item Using Flask along with HTML/CSS/JS to customize better
+			\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{References}
+	\begin{enumerate}
+		\item Colorful Image Colorization paper by Richard Zhang, Phillip Isola, Alexei A. Efros: \textcolor{cyan}{\href{https://arxiv.org/pdf/1603.08511.pdf}{https://arxiv.org/pdf/1603.08511.pdf}}
+		\item Applications of AutoEncoders - Image Colourisation: \textcolor{cyan}{\href{https://github.com/bnsreenu/python\_for\_microscopists}{https://github.com/bnsreenu/python\_for\_microscopists}}
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Our Project}
+	\begin{itemize}
+		\item Web Application: \textcolor{cyan}{\href{https://image-colouriser-streamlit.herokuapp.com/}{https://image-colouriser-streamlit.herokuapp.com/}}
+		\item Gitlab: \textcolor{cyan}{\href{https://gitlab.com/twishabansal/image-colourisation}{https://gitlab.com/twishabansal/image-colourisation}}
+		\item Kaggle Notebook: \textcolor{cyan}{\href{https://www.kaggle.com/sejalgupta01/image-colorization-starter}{https://www.kaggle.com/sejalgupta01/image-colorization-starter}}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[standout]
+	\center{Questions and Suggestions?}
+\end{frame}
+
+\end{document}
