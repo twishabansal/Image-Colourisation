@@ -17,7 +17,7 @@
 
 ## To Run the Notebook using Pretrained Weights
 
-The path files for the models trained on landscapes, fruits, and clothes and people are available as **landscapes.pth**, **fruits.pth** and **clothes.pth**.
+The path files for the models trained on landscapes, fruits, and clothes and people are available as [landscapes.pth](https://github.com/Priyansi/image-colouriser-streamlit/blob/master/app/landscapes.pth), [fruits.pth](https://github.com/Priyansi/image-colouriser-streamlit/blob/master/app/fruits.pth) and [clothes.pth](https://github.com/Priyansi/image-colouriser-streamlit/blob/master/app/clothes.pth).
 
 1. Clone the repository with `git clone https://gitlab.com/twishabansal/image-colourisation.git`
 2. Open `image-colourization-starter.ipynb`.
