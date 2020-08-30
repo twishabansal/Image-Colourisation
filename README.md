@@ -1,4 +1,4 @@
-\# Image Colourization :rainbow: 
+# Image Colourization :rainbow: 
 [<img src="https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?&style=for-the-badge&logo=PyTorch&logoColor=white" />](https://pytorch.org/)
 [<img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>](https://heroku.com/)
 
