@@ -2,6 +2,9 @@
 [<img src="https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?&style=for-the-badge&logo=PyTorch&logoColor=white" />](https://pytorch.org/)
 [<img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>](https://heroku.com/)
 
+[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+[![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/)
+
 An image colourisation model trained on 300k images using autoencoders to colourise grayscale images live [here](https://image-colouriser-streamlit.herokuapp.com/).
 
 ## Technology Stack
