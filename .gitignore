@@ -1,6 +1,6 @@
-.log
-.aux
-.toc
-.nav
-.out
-.snm
+*.log
+*.aux
+*.toc
+*.nav
+*.out
+*.snm
