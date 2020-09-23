@@ -3,7 +3,7 @@
 \title[Image-Colourization]{Image Colourisation Project}
 \subtitle{Jun-Aug 2020 {\textbar} WTEF Project {\textbar} Deep Learning}
 \author[Team-9]{Priyansi {\textbar} Sejal Gupta {\textbar} Twisha Bansal}
-\date{31 August 2020}
+\date{September 2020}
 
 \usetheme{metropolis}
 \usepackage{xcolor}
@@ -18,20 +18,24 @@
         \titlepage
 \end{frame}
 
+\begin{frame}[standout]
+	\center{Our journey from being entirely clueless to completing an\\ Image Colourisation project\\ in Deep Learning}
+\end{frame}
+
 \begin{frame}{Objective}
 	\begin{center}
 		\includegraphics[width=11cm]{Objective}
 	\end{center}
 \end{frame}
 
-\begin{frame}{Motivation}
-	\begin{center}
-		\includegraphics[width=10cm]{slide_fascination}
-	\end{center}
-\end{frame}
-
-\begin{frame}[standout]
-	\center{Our journey from being entirely clueless to completing an\\ Image Colourisation project\\ in Deep Learning}
+\begin{frame}{Colorful Image Colorization paper by Richard Zhang, Phillip Isola, Alexei A. Efros}
+	To hallucinate the most plausible colour version by training a CNN, to map from a grayscale input to a distribution over quantized colour value outputs\\
+	\pause
+	\textbf{Challenges}\\
+	\begin{itemize}
+		\item Advanced Mathematics
+		\item Limited Resources
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[standout]
@@ -73,7 +77,7 @@
 
 \begin{frame}{Model}
 	\begin{center}
-		\includegraphics[width=11cm]{Model}
+		\includegraphics[width=11cm]{AutoEncoder}
 	\end{center}
 \end{frame}
 
@@ -87,33 +91,32 @@
 
 \begin{frame}{Challenges}
 	\begin{itemize}
-		\item Tensor and Numpy Array interconvertability
-		\item Interoperatability between CPU and CUDA
-		\item Runtime disconnects
-		\item Signal being killed due to memory usage
+		\item Lack of resources
 			\pause
-		\item No Mathematical Parameters like Accuracy to check results
+		\item MSE Loss is not a good parameter to measure human perception of colouring
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Datasets}
-	Trained on approximately 313K images
+	Trained on approximately \textbf{570K} images (Links provided below)
 	\begin{itemize}
 		\item \href{https://www.kaggle.com/lijiyu/imagenet}{ImageNet(50K Images)}\\
 		\item \href{https://www.kaggle.com/hsankesara/flickr-image-dataset}{Flickr}\\
 		\item \href{https://www.kaggle.com/huseynguliyev/landscape-classification}{Landscape Classification}\\
-		\item \href{https://www.kaggle.com/nitishabharathi/scene-classification}{Scene Classification}\\
 		\item \href{https://www.kaggle.com/moltean/fruits}{Fruits 360}\\
 		\item \href{https://www.kaggle.com/chrisfilo/fruit-recognition}{Fruits Recognition}\\
 		\item \href{https://www.kaggle.com/salil007/caavo}{Clothes Classification}\\
+		\item \href{https://www.kaggle.com/jessicali9530/celeba-dataset}{CelebA Dataset}\\
+		\item \href{https://www.kaggle.com/alessiocorrado99/animals10}{Animals 10}\\
+		\item \href{https://www.kaggle.com/mistag/arthropod-taxonomy-orders-object-detection-dataset}{Arthropod Taxonomy Dataset}\\
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Results: Pass}
+\begin{frame}{Results: Good}
 	\includegraphics[width=11cm]{pass}
 \end{frame}
 
-\begin{frame}{Results: Fail}
+\begin{frame}{Results: Bad}
 	\includegraphics[width=11cm]{fail}
 \end{frame}
 
@@ -134,16 +137,15 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Further Improvements}
+\begin{frame}{Improvements}
 	\begin{itemize}
-		\item Generalising on more themes
+		\item Adding more themes
 		\item Automating the classification of themes
-		\item Incorporating Data augmentation
-		\item Compatibility with all image sizes
+		\item Retrain with additional data generated using data augmentation
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{References}
+\begin{frame}{Sources}
 	\begin{enumerate}
 		\item Colorful Image Colorization paper by Richard Zhang, Phillip Isola, Alexei A. Efros: \textcolor{cyan}{\href{https://arxiv.org/pdf/1603.08511.pdf}{https://arxiv.org/pdf/1603.08511.pdf}}
 		\item Applications of AutoEncoders - Image Colourisation: \textcolor{cyan}{\href{https://github.com/bnsreenu/python\_for\_microscopists}{https://github.com/bnsreenu/python\_for\_microscopists}}
