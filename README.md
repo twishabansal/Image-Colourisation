@@ -1,4 +1,4 @@
-# Image Colourization :rainbow: 
+<div style="text-align:center"><img src="logo.png" /></div>
 [<img src="https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?&style=for-the-badge&logo=PyTorch&logoColor=white" />](https://pytorch.org/)
 [<img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/>](https://heroku.com/)
 
@@ -61,4 +61,8 @@ The following datasets were used to train the model-
 2. [Applications of AutoEncoders - Image Colourisation](https://github.com/bnsreenu/python_for_microscopists)
 <br>
 
+## License
+All rights reserved. Licensed under the MIT License.
+
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
