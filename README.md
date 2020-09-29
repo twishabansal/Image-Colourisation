@@ -14,17 +14,11 @@
 
 <div align="center"><h4> An image colourisation model trained on 570k images using autoencoders to colourise grayscale images.</h4></div>
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="thumbnail.png">
-    <source src="demo.mp4" type="video/mp4">
-  </video>
-</figure>
-
 <div align="center"><img src="https://forthebadge.com/images/badges/check-it-out.svg" href="https://image-colouriser-streamlit.herokuapp.com/" /></div>
 
 <br />
 
-<div align="center"><img src="demo.gif" /></div>
+<div align="center"><img src="demo.mp4"></div>
 
 ## Technology Stack
 - [Pytorch](https://pytorch.org/) for building the model
