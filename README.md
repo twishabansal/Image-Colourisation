@@ -18,7 +18,7 @@
 
 <br />
 
-<div align="center"><img src="demo.mp4"></div>
+<div align="center"><img src="https://github.com/twishabansal/Image-Colourisation/blob/master/demo.mp4"></div>
 
 ## Technology Stack
 - [Pytorch](https://pytorch.org/) for building the model
